@@ -52,6 +52,13 @@ document.onkeyup = function(event){
         // cpuEl.textContent = computer;
        
     }
+    if (loss === 10 || guessLeft ===0){
+        alert ("You lost the game! Game restart");
+        win = 0;
+        loss = 0;
+        guessLeft = 9;
+        playerEl.textContent = '';
+    }
 }
 
 function computerChoice(){
